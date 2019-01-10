@@ -1,0 +1,10 @@
+<div class="matrix-size">
+  <h2>{{title}}</h2>
+  <input #size type="number" id="size-input" class="size-input" placeholder="Enter Size..." min="1" max="10"
+  (input)="onChange(size.value)"/>
+  <p class="error-message">{{errorMessage}}</p>
+  <div *ngIf="matrixSize">
+    <app-matrix [size]="matrixSize"></app-matrix>
+  </div>
+  <button (click)="goBack()" id="backBtn" class="btn btn-info btn-sm">Go Back</button>
+</div>

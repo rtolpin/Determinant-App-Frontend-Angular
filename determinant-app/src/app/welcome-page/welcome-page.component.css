@@ -1,0 +1,24 @@
+h1 {
+    font-size: 1.5em;
+    color: rgb(101, 172, 101);
+    margin-bottom: 0;
+}
+
+.main {
+    /* position: absolute; */
+    /* margin-left: 10em;
+    margin-top: 2em; */
+    /* display: inline-block;
+    justify-content: center;
+    align-items: center; */
+    margin-top: 5em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* min-height: 100vh; */
+}
+
+.navigate-button {
+    margin-top: 1em;
+    margin-left: 0.5em;
+}

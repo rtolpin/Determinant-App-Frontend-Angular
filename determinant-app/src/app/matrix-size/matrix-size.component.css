@@ -1,0 +1,22 @@
+.matrix-size {
+    margin-top: 1em;
+    position: absolute;
+    display: inline-block;
+    top: 2rem;
+    left: 2em;
+}
+
+.size-input {
+    text-align: center;
+    width: 13em;
+}
+
+.error-message {
+    color: red;
+    margin-top: 1em;
+}
+
+#backBtn {
+    margin-top: 1em;
+}
+

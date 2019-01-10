@@ -1,0 +1,13 @@
+<div class="matrix" *ngIf="size">
+  <div #matrixRow class="parent-{{s}}" *ngFor="let s of sizeArr">
+    <input #matrixInput type="number" (input)="addToMatrix(matrixRow.className, matrixInput.className, matrixInput.value)" class="input matrix-box child-{{s}}" *ngFor="let s of sizeArr" />
+  </div>
+  <button id="submitMatrix" (click)="submitMatrix()" class="btn btn-dark btn-sm">Submit Matrix</button>
+</div>
+<div class="result" *ngIf="determinant || determinant === 0">
+  <p>Determinant: {{determinant}} </p>
+</div>
+<div class="error" *ngIf="errorMessage">
+  {{errorMessage}}
+</div>
+
